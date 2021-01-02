@@ -1,0 +1,12 @@
+<form action="/posts/{{ post.post_id }}/edit" method="post">
+  <label>Name</label>
+  <input name="name" value="{{ contact.name }}"/>
+  </br>
+  <label>Number</label>
+  <input name="number" value="{{ contact.number }}"/>
+  </br>
+  <label>Notes</label>
+  <input name="notes" value="{{ contact.notes }}"/>
+  </br>
+  <button type="submit">Submit</button>
+</form>
