@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View/edit contact</title>
+</head>
+<body>
+    <h1>Contact information</h1>
+        <form action="/contacts/{{ contact.id }}" method="post">
+{#            <input type="hidden" name="id" value="{{ contact.id }}">#}
+            <label>Name: <input type="text" name="Name" value="{{ contact.name }}"></label>
+            <br><br>
+            <label>Number: <input type="text" name="Number" value="{{ contact.number }}"></label>
+            <br><br>
+            <label>Note: <input type="text" name="Note" value="{{ contact.note }}"></label>
+            <br><br>
+            <input type="submit" name="Update_button" value="Update">
+            <input type="submit" name="Delete_button" value="Delete">
+        </form>
+</body>
+</html>
